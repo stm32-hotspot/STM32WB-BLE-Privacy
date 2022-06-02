@@ -29,7 +29,7 @@ This Hotspot FW package includes:
 
 ![UG_IMAGE_1](Utilities/Media/Images/User_Guide/RSA.jpg)
  
-	* (a) After the connection is established, the STM32WB device will automatically initiate a pairing request (w/ Numerical Comparison method), so accept the pairing requests from the app when prompted. During the pairing (bonding) procedure, the STM32WB shares the IRK with the Central, which enables the Central to resolve/decode the RPA from it in subsequent advertising events.
+	* After the connection is established, the STM32WB device will automatically initiate a pairing request (w/ Numerical Comparison method), so accept the pairing requests from the app when prompted. During the pairing (bonding) procedure, the STM32WB shares the IRK with the Central, which enables the Central to resolve/decode the RPA from it in subsequent advertising events.
 
 ![UG_IMAGE_2](Utilities/Media/Images/User_Guide/Pairing.jpg)
 
