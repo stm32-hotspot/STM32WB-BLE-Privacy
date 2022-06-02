@@ -29,11 +29,11 @@ This Hotspot FW package includes:
 
 ![UG_IMAGE_1](Utilities/Media/Images/User_Guide/RSA.jpg)
  
-	* (a) After the connection is established, the STM32WB device will automatically initiate a pairing request (w/ Numerical Comparison method), so accept the pairing requests from the app when prompted. During the pairing (bonding) procedure, the STM32WB shares the IRK with the Central, which enables the Central to resolve/decode the RPA from it in subsequent advertising events.
+* (a) After the connection is established, the STM32WB device will automatically initiate a pairing request (w/ Numerical Comparison method), so accept the pairing requests from the app when prompted. During the pairing (bonding) procedure, the STM32WB shares the IRK with the Central, which enables the Central to resolve/decode the RPA from it in subsequent advertising events.
 
 ![UG_IMAGE_2](Utilities/Media/Images/User_Guide/Pairing.jpg)
 
-	* (b) After the pairing procedure, the STM32WB peripheral automatically reads the address of the bonded device (Smartphone's Bluetooth MAC address) and adds it to its "resolving list".  When the resolving list contains at least one peer address, it enables the peripheral to advertise with an RPA thereafter. Again, if the resolving list contains no peer addresses, the device advertises with the Static Random Address. The Central should also take care of adding the peer address to its resolving list in order for it to be able to discover and resolve it on subsequent times when the bonded Peripheral is advertising with an RPA. 
+* (b) After the pairing procedure, the STM32WB peripheral automatically reads the address of the bonded device (Smartphone's Bluetooth MAC address) and adds it to its "resolving list".  When the resolving list contains at least one peer address, it enables the peripheral to advertise with an RPA thereafter. Again, if the resolving list contains no peer addresses, the device advertises with the Static Random Address. The Central should also take care of adding the peer address to its resolving list in order for it to be able to discover and resolve it on subsequent times when the bonded Peripheral is advertising with an RPA. 
 
 ![UG_IMAGE_3](Utilities/Media/Images/User_Guide/Trace_Log.jpg)
 
