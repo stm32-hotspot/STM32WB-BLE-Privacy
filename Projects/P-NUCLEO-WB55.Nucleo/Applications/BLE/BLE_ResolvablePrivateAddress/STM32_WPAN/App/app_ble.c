@@ -841,7 +841,7 @@ APP_BLE_ConnStatus_t APP_BLE_Get_Server_Connection_Status(void)
 }
 
 /* USER CODE BEGIN FD*/
-uint8_t button_mode = 1;
+uint8_t button_mode = 0;
 uint8_t Resolving_List_Size;
 
 /* 
@@ -858,7 +858,7 @@ void APP_BLE_Key_Button1_Action(void)
   
   if (button_mode)
   {
-    UTIL_SEQ_SetTask( 1<<CFG_TASK_READ_RPA_ID, CFG_SCH_PRIO_0);  //[JT]
+    UTIL_SEQ_SetTask( 1<<CFG_TASK_READ_RPA_ID, CFG_SCH_PRIO_0);  
   }
   else
   {
